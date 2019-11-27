@@ -18,7 +18,7 @@ if( isset( $_GET["rules"] ) ){
         $options_text .= $rule->field.':'.$rule->operator.$rule->value.'+';
     }
 
-    file_put_contents('test.txt', $url.$options_text); //<---- test row to see what happens
+    //file_put_contents('test.txt', $url.$options_text); //<---- test row to see what happens
 
     $data = file_get_contents($url.$options_text, false, $context);
 
